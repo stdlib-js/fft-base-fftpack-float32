@@ -37,14 +37,21 @@
   },
   "dependencies": {
     "@stdlib/fft-base-fftpack-float32-decompose": "github:stdlib-js/fft-base-fftpack-float32-decompose#main",
+    "@stdlib/fft-base-fftpack-float32-rffti": "github:stdlib-js/fft-base-fftpack-float32-rffti#main",
     "@stdlib/utils-define-read-only-property": "^0.2.3"
   },
   "devDependencies": {
     "@stdlib/array-float32": "^0.2.3",
+    "@stdlib/array-zero-to": "^0.2.3",
     "@stdlib/assert-is-same-float32array": "^0.2.3",
+    "@stdlib/console-log-each": "^0.2.4",
+    "@stdlib/constants-float32-two-pi": "^0.1.1",
     "@stdlib/math-base-assert-is-nanf": "^0.2.3",
+    "@stdlib/math-base-special-floor": "^0.2.4",
     "@stdlib/math-base-special-floorf": "^0.2.3",
     "@stdlib/math-base-special-log2f": "github:stdlib-js/math-base-special-log2f#main",
+    "@stdlib/math-base-special-sincosf": "^0.1.1",
+    "@stdlib/number-float32-base-assert-is-almost-same-value": "^0.1.1",
     "@stdlib/number-float64-base-to-float32": "^0.2.3",
     "@stdlib/string-format": "^0.2.3",
     "@stdlib/utils-keys": "^0.2.3",
