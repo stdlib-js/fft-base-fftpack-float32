@@ -74,6 +74,12 @@ var o = ns;
 
 <!-- <toc pattern="*"> -->
 
+<div class="namespace-toc">
+
+-   <span class="signature">[`decompose( N, M, initial, si, oi, out, so, oo )`][@stdlib/fft/base/fftpack/float32/decompose]</span><span class="delimiter">: </span><span class="description">factorize a sequence length into a product of integers and store the results in a single-precision floating-point array.</span>
+
+</div>
+
 <!-- </toc> -->
 
 </section>
@@ -180,6 +186,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/fft-base-fftpack-float32/main/LICENSE
 
 <!-- <toc-links> -->
+
+[@stdlib/fft/base/fftpack/float32/decompose]: https://github.com/stdlib-js/fft-base-fftpack-float32-decompose
 
 <!-- </toc-links> -->
 
