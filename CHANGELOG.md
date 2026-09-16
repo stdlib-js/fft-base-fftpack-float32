@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`bbf5576`](https://github.com/stdlib-js/stdlib/commit/bbf55760716ee0e6d0eb5f74b4ac22390257475f) - update `fft/base/fftpack/float32` TypeScript declarations [(#15258)](https://github.com/stdlib-js/stdlib/pull/15258)
 -   [`ed8ea0c`](https://github.com/stdlib-js/stdlib/commit/ed8ea0c7808eec0735fa06e3f9929531e21e8f82) - add `fft/base/fftpack/float32/sinqi` [(#14808)](https://github.com/stdlib-js/stdlib/pull/14808)
 -   [`61956b3`](https://github.com/stdlib-js/stdlib/commit/61956b30de14ee2edb75722c3c8f9ed87dda9c9c) - add `fft/base/fftpack/float32/cosqi` [(#14786)](https://github.com/stdlib-js/stdlib/pull/14786)
 -   [`13d01a9`](https://github.com/stdlib-js/stdlib/commit/13d01a960d64ecbf63628e52451b29cc27505eec) - update `fft/base/fftpack/float32` TypeScript declarations [(#14641)](https://github.com/stdlib-js/stdlib/pull/14641)
@@ -36,6 +37,10 @@
 
 ### BREAKING CHANGES
 
+-   [`bbf5576`](https://github.com/stdlib-js/stdlib/commit/bbf55760716ee0e6d0eb5f74b4ac22390257475f): write to a Uint32Array
+
+    -   To migrate, consumers should provide a Uint32Array instead of a Float32Array. Doing so allows support for longer sequence lengths.
+
 -   [`7333861`](https://github.com/stdlib-js/stdlib/commit/7333861bf0de5054a329c9941c92a46d716be4ce): reinterpret workspace array
 
     -   To migrate, consumers should reinterpret the factor section as a `Uint32Array` view, as demonstrated in documented examples.
@@ -54,6 +59,7 @@
 
 <details>
 
+-   [`bbf5576`](https://github.com/stdlib-js/stdlib/commit/bbf55760716ee0e6d0eb5f74b4ac22390257475f) - **feat:** update `fft/base/fftpack/float32` TypeScript declarations [(#15258)](https://github.com/stdlib-js/stdlib/pull/15258) _(by stdlib-bot)_
 -   [`268814f`](https://github.com/stdlib-js/stdlib/commit/268814f8b0e017504112dd6e50e7836644273f6f) - **docs:** update namespace table of contents [(#15259)](https://github.com/stdlib-js/stdlib/pull/15259) _(by stdlib-bot)_
 -   [`7333861`](https://github.com/stdlib-js/stdlib/commit/7333861bf0de5054a329c9941c92a46d716be4ce) - **refactor:** update `fft/base/fftpack/float32/rffti` to use integer array view [(#15247)](https://github.com/stdlib-js/stdlib/pull/15247) _(by Gunj Joshi, Athan Reines)_
 -   [`7099552`](https://github.com/stdlib-js/stdlib/commit/7099552f0144bc0c4ab8aa5afc68796d14b469a6) - **docs:** remove duplicate lines [(#15246)](https://github.com/stdlib-js/stdlib/pull/15246) _(by Gunj Joshi)_
