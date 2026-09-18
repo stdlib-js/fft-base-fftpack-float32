@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-09-16)
+## Unreleased (2026-09-18)
 
 <section class="features">
 
@@ -59,6 +59,7 @@
 
 <details>
 
+-   [`625cd5d`](https://github.com/stdlib-js/stdlib/commit/625cd5d8f466e2e7312306a9d731634c9e77f4ce) - **docs:** update namespace table of contents [(#15288)](https://github.com/stdlib-js/stdlib/pull/15288) _(by stdlib-bot)_
 -   [`bbf5576`](https://github.com/stdlib-js/stdlib/commit/bbf55760716ee0e6d0eb5f74b4ac22390257475f) - **feat:** update `fft/base/fftpack/float32` TypeScript declarations [(#15258)](https://github.com/stdlib-js/stdlib/pull/15258) _(by stdlib-bot)_
 -   [`268814f`](https://github.com/stdlib-js/stdlib/commit/268814f8b0e017504112dd6e50e7836644273f6f) - **docs:** update namespace table of contents [(#15259)](https://github.com/stdlib-js/stdlib/pull/15259) _(by stdlib-bot)_
 -   [`7333861`](https://github.com/stdlib-js/stdlib/commit/7333861bf0de5054a329c9941c92a46d716be4ce) - **refactor:** update `fft/base/fftpack/float32/rffti` to use integer array view [(#15247)](https://github.com/stdlib-js/stdlib/pull/15247) _(by Gunj Joshi, Athan Reines)_
