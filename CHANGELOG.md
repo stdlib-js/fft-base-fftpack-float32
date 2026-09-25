@@ -4,12 +4,14 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-09-20)
+## Unreleased (2026-09-25)
 
 <section class="features">
 
 ### Features
 
+-   [`cc80daa`](https://github.com/stdlib-js/stdlib/commit/cc80daa661dc09bfdfa0ac4eb9102a3ecdfb5582) - add `rfftf` to namespace
+-   [`11f8bc3`](https://github.com/stdlib-js/stdlib/commit/11f8bc38811058795878ab3610a38a9c516abd0f) - add `fft/base/fftpack/float32/rfftf` [(#15379)](https://github.com/stdlib-js/stdlib/pull/15379)
 -   [`0061913`](https://github.com/stdlib-js/stdlib/commit/0061913d2e65266d30537fb1548e1a7da6c73dfd) - update `fft/base/fftpack/float32` TypeScript declarations [(#15287)](https://github.com/stdlib-js/stdlib/pull/15287)
 -   [`bbf5576`](https://github.com/stdlib-js/stdlib/commit/bbf55760716ee0e6d0eb5f74b4ac22390257475f) - update `fft/base/fftpack/float32` TypeScript declarations [(#15258)](https://github.com/stdlib-js/stdlib/pull/15258)
 -   [`ed8ea0c`](https://github.com/stdlib-js/stdlib/commit/ed8ea0c7808eec0735fa06e3f9929531e21e8f82) - add `fft/base/fftpack/float32/sinqi` [(#14808)](https://github.com/stdlib-js/stdlib/pull/14808)
@@ -64,6 +66,8 @@
 
 <details>
 
+-   [`cc80daa`](https://github.com/stdlib-js/stdlib/commit/cc80daa661dc09bfdfa0ac4eb9102a3ecdfb5582) - **feat:** add `rfftf` to namespace _(by Athan Reines)_
+-   [`11f8bc3`](https://github.com/stdlib-js/stdlib/commit/11f8bc38811058795878ab3610a38a9c516abd0f) - **feat:** add `fft/base/fftpack/float32/rfftf` [(#15379)](https://github.com/stdlib-js/stdlib/pull/15379) _(by Gunj Joshi, Athan Reines)_
 -   [`0061913`](https://github.com/stdlib-js/stdlib/commit/0061913d2e65266d30537fb1548e1a7da6c73dfd) - **feat:** update `fft/base/fftpack/float32` TypeScript declarations [(#15287)](https://github.com/stdlib-js/stdlib/pull/15287) _(by stdlib-bot)_
 -   [`625cd5d`](https://github.com/stdlib-js/stdlib/commit/625cd5d8f466e2e7312306a9d731634c9e77f4ce) - **docs:** update namespace table of contents [(#15288)](https://github.com/stdlib-js/stdlib/pull/15288) _(by stdlib-bot)_
 -   [`bbf5576`](https://github.com/stdlib-js/stdlib/commit/bbf55760716ee0e6d0eb5f74b4ac22390257475f) - **feat:** update `fft/base/fftpack/float32` TypeScript declarations [(#15258)](https://github.com/stdlib-js/stdlib/pull/15258) _(by stdlib-bot)_
