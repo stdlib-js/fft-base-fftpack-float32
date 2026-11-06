@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-09-26)
+## Unreleased (2026-11-06)
 
 <section class="features">
 
 ### Features
 
+-   [`8dc011f`](https://github.com/stdlib-js/stdlib/commit/8dc011f4765ab2328269afb8b97212d3b55518ad) - add `fft/base/fftpack/float32/hc2c` [(#15758)](https://github.com/stdlib-js/stdlib/pull/15758)
 -   [`8b79b91`](https://github.com/stdlib-js/stdlib/commit/8b79b919e9514ddaff25acddef991b4bbc16b8bd) - update `fft/base/fftpack/float32` TypeScript declarations [(#15551)](https://github.com/stdlib-js/stdlib/pull/15551)
 -   [`cc80daa`](https://github.com/stdlib-js/stdlib/commit/cc80daa661dc09bfdfa0ac4eb9102a3ecdfb5582) - add `rfftf` to namespace
 -   [`11f8bc3`](https://github.com/stdlib-js/stdlib/commit/11f8bc38811058795878ab3610a38a9c516abd0f) - add `fft/base/fftpack/float32/rfftf` [(#15379)](https://github.com/stdlib-js/stdlib/pull/15379)
@@ -41,6 +42,14 @@
 
 ### BREAKING CHANGES
 
+-   [`518731b`](https://github.com/stdlib-js/stdlib/commit/518731be8f6175e403a1dbf010b9dcea6d20b4df): use `Uint32Array` view
+
+    -   To migrate, consumers should create a `Uint32Array` view of the factors section. This ensures we preserve accuracy for larger sequence lengths.
+
+-   [`470ed70`](https://github.com/stdlib-js/stdlib/commit/470ed70e05e98c76ef7a854dc078cece2a060442): require accessing factors as a Uint32Array view
+
+    -   This ensures we can avoid loss in precision when storing large integer values in a `Float32Array`.
+
 -   [`0061913`](https://github.com/stdlib-js/stdlib/commit/0061913d2e65266d30537fb1548e1a7da6c73dfd): write factors to workspace as Uint32Array view
 
     -   To migrate, workspace consumers should reinterpret the factors section as a `Uint32Array`. This enables support for longer sequence lengths.
@@ -67,6 +76,10 @@
 
 <details>
 
+-   [`78ad2fa`](https://github.com/stdlib-js/stdlib/commit/78ad2fa5dbb12ce808dec93197d5343745ff91b8) - **docs:** normalize trailing newlines in REPL help texts [(#16420)](https://github.com/stdlib-js/stdlib/pull/16420) _(by Philipp Burckhardt)_
+-   [`518731b`](https://github.com/stdlib-js/stdlib/commit/518731be8f6175e403a1dbf010b9dcea6d20b4df) - **refactor:** update `fft/base/fftpack/float32/sinqi` to use integer array view [(#16361)](https://github.com/stdlib-js/stdlib/pull/16361) _(by Gunj Joshi, Athan Reines)_
+-   [`470ed70`](https://github.com/stdlib-js/stdlib/commit/470ed70e05e98c76ef7a854dc078cece2a060442) - **refactor:** update `fft/base/fftpack/float32/cosqi` to use integer array view [(#15329)](https://github.com/stdlib-js/stdlib/pull/15329) _(by Gunj Joshi)_
+-   [`8dc011f`](https://github.com/stdlib-js/stdlib/commit/8dc011f4765ab2328269afb8b97212d3b55518ad) - **feat:** add `fft/base/fftpack/float32/hc2c` [(#15758)](https://github.com/stdlib-js/stdlib/pull/15758) _(by Gunj Joshi)_
 -   [`5a64ba7`](https://github.com/stdlib-js/stdlib/commit/5a64ba797591937f32a349ce251853787c251b6e) - **docs:** update namespace table of contents [(#15554)](https://github.com/stdlib-js/stdlib/pull/15554) _(by stdlib-bot)_
 -   [`8b79b91`](https://github.com/stdlib-js/stdlib/commit/8b79b919e9514ddaff25acddef991b4bbc16b8bd) - **feat:** update `fft/base/fftpack/float32` TypeScript declarations [(#15551)](https://github.com/stdlib-js/stdlib/pull/15551) _(by stdlib-bot)_
 -   [`62cbbac`](https://github.com/stdlib-js/stdlib/commit/62cbbac0f25dddf13b832a1de15d11f2ddad03ca) - **docs:** fix description [(#15542)](https://github.com/stdlib-js/stdlib/pull/15542) _(by Gunj Joshi, Athan Reines)_
@@ -101,10 +114,11 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Gunj Joshi
+-   Philipp Burckhardt
 
 </section>
 
